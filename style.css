@@ -1,0 +1,160 @@
+:root {
+  --grey-color: #b68461;
+  --light-grey-color: #c3a895;
+  --dark-color: #000000;
+  --wheat-color: #fffbe8;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+  font-family: myFont;
+  src: url(assets/Castellar\ Regular.ttf);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--dark-color);
+  align-items: center;
+  padding: 0 6em;
+  height: 4em;
+  position: fixed;
+  z-index: 1000;
+}
+.logo {
+  height: 8em;
+  object-fit: cover;
+}
+
+.right ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 4em;
+  margin-left: 20em;
+}
+.right ul li {
+  list-style: none;
+}
+.right ul li a {
+  text-decoration: none;
+  color: var(--wheat-color);
+  text-transform: uppercase;
+  font-family: "Inria Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  transition: color 0.3s ease-in-out;
+}
+.right ul li a:hover {
+  color: var(--grey-color);
+}
+.hero {
+  height: 100vh;
+}
+.hero {
+  background-image: url("assets/hero4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about {
+  height: 110vh;
+  background-color: var(--grey-color);
+}
+.pageheader {
+  font-family: myFont;
+  width: 100%;
+  text-align: center;
+  text-shadow: 1px 1px 30px rgba(0, 0, 0, 0.966);
+  padding-top: 2.5em;
+}
+.aboutImgs {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 3em;
+}
+.aboutImage {
+  width: 18em;
+  height: 28em;
+  margin-left: 3em;
+}
+.right {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 5.7em;
+  margin-left: 2em;
+  column-gap: 1.2em;
+}
+.aboutContainer {
+  position: relative;
+}
+.aboutContainer img {
+  width: 14em;
+  height: 10em;
+  object-fit: cover;
+}
+.aboutBackground p {
+  background-color: var(--dark-color);
+  color: var(--wheat-color);
+  text-align: center;
+  height: fit-content;
+  position: absolute;
+  bottom: 0.2em;
+  width: 100%;
+  opacity: 80%;
+}
+.story {
+  height: 100vh;
+  background-color: var(--light-grey-color);
+}
+.storyContainer {
+  padding: 4em 5em;
+}
+.story p {
+  font-family: "Inknut Antiqua", serif;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.5em;
+}
+.story img {
+  width: 10em;
+  height: 6em;
+  object-fit: cover;
+}
+.img1 {
+  float: right;
+}
+.img2 {
+  float: left;
+  margin-right: 1.3em;
+}
+.storyBottom {
+  padding: 4em 0;
+}
+.contact {
+  background-color: var(--grey-color);
+  height: 80vh;
+}
+.contactContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 3em 5em;
+}
+.contactLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin-top: 3em;
+  margin-left: 5em;
+}
+.copywrite {
+  background-color: #000000bd;
+}
+.copywrite p {
+  color: var(--wheat-color);
+  text-align: center;
+  padding: 1em 0;
+}
