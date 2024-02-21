@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="tablet.css">
+    <link rel="stylesheet" href="mobile.css">
     <link
       rel="shortcut icon"
       href="assets/Abol-removebg-preview.png"
@@ -35,12 +37,22 @@
         /></a>
       </div>
       <div class="right">
+        <i onclick="openMenu()" class="fa-solid fa-bars"></i>
+
         <ul>
           <li><a href="#">home</a></li>
           <li><a href="#resipes">RESIPES</a></li>
           <li><a href="#story">story</a></li>
           <li><a href="#contact">contact</a></li>
         </ul>
+        <ul class="mobileNavbar ">
+          <i onclick="closeMenu()" class="fa-solid fa-xmark close"></i>
+          <li><a href="#">home</a></li>
+          <li><a href="#resipes">RESIPES</a></li>
+          <li><a href="#story">story</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      
       </div>
     </nav>
     <div class="hero"></div>
@@ -174,8 +186,8 @@
         <div class="contactRight">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2786.2458416397303!2d38.763795583847234!3d9.032107554674191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b859797149b25%3A0x2bea4652ce50614!2zQW1iYXNzYWRvciBNYWxsIHwgNCBLSUxPIHwg4Yqg4Yid4Ymj4Yiz4Yuw4YitIOGInuGIjSB8IDQg4Yqq4YiO!5e0!3m2!1sen!2set!4v1708443891055!5m2!1sen!2set"
-            width="600"
-            height="300"
+            width="700"
+            height="400"
             style="border: 0"
             allowfullscreen=""
             loading="lazy"

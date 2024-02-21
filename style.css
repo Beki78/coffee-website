@@ -7,6 +7,12 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 @font-face {
   font-family: myFont;
@@ -26,6 +32,12 @@ html {
   position: fixed;
   z-index: 1000;
 }
+.mobileNavbar{
+  display: none;
+}
+.right i {
+  display: none;
+}
 .logo {
   height: 8em;
   object-fit: cover;
@@ -33,7 +45,6 @@ html {
 
 .right ul {
   display: flex;
-  justify-content: space-between;
   gap: 4em;
   margin-left: 20em;
 }
@@ -59,9 +70,12 @@ html {
   background-image: url("assets/hero4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  height: 50em;
 }
 .about {
-  height: 110vh;
+  height: auto;
   background-color: var(--grey-color);
 }
 .pageheader {
@@ -73,8 +87,7 @@ html {
 }
 .aboutImgs {
   display: flex;
-  justify-content: flex-start;
-  margin-top: 3em;
+  justify-content: center;
 }
 .aboutImage {
   width: 18em;
@@ -88,6 +101,7 @@ html {
   margin-left: 2em;
   column-gap: 1.2em;
 }
+
 .aboutContainer {
   position: relative;
 }
@@ -107,11 +121,11 @@ html {
   opacity: 80%;
 }
 .story {
-  height: 100vh;
+  height: auto;
   background-color: var(--light-grey-color);
 }
 .storyContainer {
-  padding: 4em 5em;
+  padding: 2em 5em;
 }
 .story p {
   font-family: "Inknut Antiqua", serif;
@@ -136,19 +150,19 @@ html {
 }
 .contact {
   background-color: var(--grey-color);
-  height: 80vh;
+  height: auto;
 }
 .contactContainer {
   display: flex;
-  justify-content: space-between;
-  margin: 3em 5em;
+  justify-content: center;
+  gap: 5em;
+  padding: 2em 0;
 }
 .contactLeft {
   display: flex;
   flex-direction: column;
+  padding-top: 6em;
   gap: 2em;
-  margin-top: 3em;
-  margin-left: 5em;
 }
 .copywrite {
   background-color: #000000bd;
