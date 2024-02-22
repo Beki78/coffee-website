@@ -28,23 +28,66 @@
   .mobileNavbar {
     animation: slideIn 0.5s forwards;
     background-color: var(--dark-color);
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 1000;
-  width: 100%;
-  height: 100vh;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   @keyframes slideIn {
-     from {
-    transform: translateX(100%);
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
   }
-  to {
-    transform: translateX(0);
+  .pageheader {
+    font-size: 1.3em;
+    padding-top: 1.5em;
   }
+  .right {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 1.2em;
+  }
+  .aboutImage {
+    display: none;
+  }
+  .storyContainer {
+    padding: 1em 1em;
+  }
+  .story p {
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 100;
+    font-style: normal;
+    line-height: 1.4em;
+    font-size: 0.8em;
+  }
+  .contactContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+    padding: 1em 0;
+  }
+  .contactLeft {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2em;
+    gap: 1em;
+    text-align: center;
+  }
+  .contactRight {
+    margin: 0 auto;
+  }
+  iframe {
+    width: 350px;
+    height: 300px;
   }
 }
