@@ -1,7 +1,16 @@
+:root {
+  --grey-color: #b68461;
+  --light-grey-color: #c3a895;
+  --dark-color: #000000;
+  --wheat-color: #fffbe8;
+}
 @media screen and (max-width: 1100px) {
   body {
     overflow-x: hidden;
   }
+  .mobileNavbar{
+  display: none;
+}
   .right ul {
     margin-left: 5em;
     gap: 2em;

@@ -30,11 +30,9 @@ html {
   padding: 0 6em;
   height: 4em;
   position: fixed;
-  z-index: 1000;
+  z-index: 100;
 }
-.mobileNavbar{
-  display: none;
-}
+
 .right i {
   display: none;
 }
@@ -63,6 +61,7 @@ html {
 .right ul li a:hover {
   color: var(--grey-color);
 }
+
 .hero {
   height: 100vh;
 }
@@ -88,6 +87,7 @@ html {
 .aboutImgs {
   display: flex;
   justify-content: center;
+  padding: 2em 0;
 }
 .aboutImage {
   width: 18em;
